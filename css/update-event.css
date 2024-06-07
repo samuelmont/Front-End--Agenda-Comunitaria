@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --amarelo: #fbff00;
+  --amarelo-50: #fbff0080;
+  --branco: #FFFFFF;
+  --branco-50: #FFFFFF80;
+  --vermelho: #ac0303;
+  --vermelho-escuro: #990303;
+  --cinza: #302D2D;
+  --cinza-50: #302D2D80;
+  --cinza-claro: #8A8888;
+  --svg-amarelo: invert(97%) sepia(100%) saturate(4466%) hue-rotate(359deg) brightness(104%) contrast(107%);
+  --svg-branco: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+h1:hover {
+  cursor: default;
+}
+
+#menu {
+  position: fixed;
+  background-color: #8A8888;
+  height: 100vh;
+  width: 20vw;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  flex-direction: column;
+  display: none;
+}
+
+#burguer-container {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #302D2D;
+  box-shadow: 1px 1px 10px 1px var(--cinza);
+}
+
+#burguer-container img {
+  margin-right: 4rem;
+  width: 4rem;
+  filter: var(--svg-branco);
+}
+
+#burguer-container img:hover {
+  cursor: pointer;
+}
+
+#menu nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 20vw;
+}
+
+#menu nav span {
+  margin-top: 2rem;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--branco-50);
+  box-shadow: 0px 1px 2px 0px var(--cinza);
+}
+
+#menu nav span h2{
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+#menu span {
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem solid var(--branco-50);
+}
+
+#menu span:hover {
+  cursor: pointer;
+}
+
+#menu span h2 {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+header {
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(var(--amarelo), var(--cinza));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-span {
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+#logo-span img {
+  width: 5rem;
+}
+
+#logo-span img:hover {
+  cursor: pointer;
+}
+
+#logo-span h1 {
+  margin-left: 2rem;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: var(--branco);
+}
+
+#hamburguer-button {
+  margin-right: 4rem;
+}
+
+#hamburguer-button img {
+  width: 4rem;
+  filter: var(--svg-branco);
+}
+
+#hamburguer-button:hover {
+  cursor: pointer;
+}
+
+main {
+  width: 100vw;
+  background-color: var(--cinza);
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#main-container {
+  min-height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#form-event-data {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  padding: 0 5vw;
+}
+
+#title-container h1 {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 4rem;
+  color: var(--amarelo);
+  margin-bottom: 3rem;
+}
+
+#spacer {
+  height: 90vh;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#spacer div {
+  height: 50vh;
+  width: 1px;
+  background-color: var(--branco-50);
+}
+
+#form-event-data-one, #form-event-data-two {
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-event-data-one input, select, #form-event-data-two input{
+  margin-top: 2rem;
+  width: 80%;
+  background-color: var(--cinza-claro);
+  border: none;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: var(--branco);
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  text-align: center;
+}
+
+#form-event-data-one input::placeholder, #form-event-data-two input::placeholder {
+  color: var(--branco);
+}
+
+#description {
+  height: 20rem;
+  text-align: left;
+}
+
+#address {
+  display: flex;
+  width: 80%;
+  gap: 5rem;
+}
+
+#file-input {
+  margin-top: 4rem
+}
+
+.file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 12px;
+  background-color: var(--cinza-claro);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.file-input__label img {
+  height: 2rem;
+  margin-right: 4px;
+  filter: var(--branco)
+}
+
+#delete-button {
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+  background: var(--vermelho);
+  border-radius: 0.5rem;
+  border: none;
+  border-bottom: 0.2rem solid var(--vermelho);
+  width: 40%;
+}
+
+#delete-button h1 {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3rem;
+  color: var(--branco);
+}
+
+#delete-button:hover {
+  background-color: var(--vermelho-escuro);
+  cursor: pointer;
+  border-bottom: 0.2rem solid var(--amarelo);
+}
+
+#title {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 3.5rem;
+  color: var(--branco);
+  margin-bottom: 5rem;
+}
+
+/* Participantes */
+
+#participants-data {
+  width: 100vw;
+  display: flex;
+  padding: 0 5vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+#participants-data article {
+  position: relative;
+  width: 20vw;
+  padding: 2rem 0;
+  border-bottom: 0.5rem solid var(--amarelo);
+}
+
+#participants-data article button {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  bottom: 0;
+  right: 0;
+  background-color: var(--vermelho);
+  border: none;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#participants-data article button:hover {
+  background-color: var(--vermelho-escuro);
+}
+
+#participants-data article button img{
+  height: 3rem;
+  width: 3rem;
+  filter: var(--svg-branco);
+}
+
+#participants-data article h1, h2 {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--branco);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#participants-data article h2 {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+#update-event {
+  margin-top: 4rem;
+  background-color: #fbff00;
+  border: none;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3rem;
+  color: black;
+  padding: 1rem 7rem;
+  border-radius: 3rem;
+  margin-bottom: 5rem;
+}
+
+
+

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agenda Comunitaria</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <title>Entrar - Cadastrar</title>
+  <link rel="stylesheet" href="./css/login-signin.css">
 </head>
 <body>
   <header>
@@ -15,20 +15,24 @@
   </header>
 
   <main>
-
     <div id="main-container">
+
       <div id="logo-container">
-        <img src="./imgs/logo.svg" alt="Simbolo de calendario" id="logo-image">
+        <img src="./imgs/logo.svg" alt="Simbolo de calendario">
         <h1>AGENDA COMUNITÁRIA</h1>
       </div>
 
       <div id="login-container">
-
         <h2>Acessar</h2>
 
         <form id="login-form">
           <input type="text" placeholder="E-mail" id="login-email">
-          <input type="text" placeholder="Senha" id="login-password">
+          <input type="password" placeholder="Senha" id="login-password">
+
+          <span id="toggle-login">
+            <img src="./imgs/hidePass.svg" alt="Olho com uma risca no meio" id="show-login">
+            <p>Mostrar senha</p>
+          </span>
 
           <a href="" id="forgot-password-container">
             <h3>Esqueci minha senha</h3>
@@ -38,29 +42,30 @@
             <img src="./imgs/arrow.svg" alt="Seta branca apontando para a direita">
           </button>
         </form>
-
       </div>
 
       <div id="signin-container">
-
         <h2>Criar Conta</h2>
 
         <form id="signin-form">
           <input type="text" placeholder="Nome" id="signin-name">
-          <input type="text" placeholder="Senha" id="signin-password">
-          <input type="text" placeholder="Confirme a senha" id="signin-repassword">
+          <input type="password" placeholder="Senha" id="signin-password">
+          <input type="password" placeholder="Confirme a senha" id="signin-repassword">
           <input type="text" placeholder="Email" id="signin-email">
           <input type="text" placeholder="Telefone" id="signin-contact">
+
+          <span id="toggle-signin">
+            <img src="./imgs/hidePass.svg" alt="Olho com uma risca no meio" id="show-signin">
+            <p>Mostrar senha</p>
+          </span>
 
           <button type="submit" id="signin-button">
             <img src="./imgs/arrow.svg" alt="Seta branca apontando para a direita">
           </button>
         </form>
-
       </div>
+
     </div>
-
   </main>
-
 </body>
 </html>

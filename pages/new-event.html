@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar evento</title>
+  <link rel="stylesheet" href="../css/new-event.css">
+</head>
+
+<body>
+
+  <section id="menu">
+    <div id="burguer-container">
+      <img src="../imgs/menu.svg" alt="Menu hamburguer" id="menu-button">
+    </div>
+    <nav>
+      <span>
+        <h2>Atualizar conta</h2>
+      </span>
+      <span>
+        <h2>Meus Eventos</h2>
+      </span>
+      <span>
+        <h2>Criar evento</h2>
+      </span>
+
+    </nav>
+    <span>
+      <h2>Sair</h2>
+    </span>
+  </section>
+
+  <header>
+    <span id="logo-span">
+      <img src="../imgs/logo.svg" alt="Simbolo de calendario">
+      <h1>AGENDA COMUNITÁRIA</h1>
+    </span>
+    <span id="hamburguer-button">
+      <img src="../imgs/menu.svg" alt="Menu hamburguer" id="menu-button">
+    </span>
+  </header>
+
+  <main>
+    <div id="main-container">
+      <form id="form">
+        <div id="form-container-one">
+          <span id="title-container">
+            <h1>Cadastro de Evento</h1>
+          </span>
+          <input type="text" placeholder="Titulo" id="title">
+          <select name="type" id="type">
+            <option value="standard" selected="standard" disabled hidden>Escolha um tipo</option>
+            <option value="Esportes">Esportes</option>
+            <option value="Ajuda">Ajuda</option>
+            <option value="Festa">Festa</option>
+            <option value="Aula">Aula</option>
+            <option value="Show">Show</option>
+            <option value="Palestra">Palestra</option>
+            <option value="Greve">Greve</option>
+            <option value="Protesto">Protesto</option>
+            <option value="Outro">Outro</option>
+          </select>
+          <input type="textarea" placeholder="Descrição" id="description">
+          <input type="number" placeholder="Quantidade" id="quantity">
+        </div>
+
+        <div id="spacer">
+          <div></div>
+        </div>
+
+        <span id="form-container-two">
+          <span id="address">
+            <input type="text" placeholder="Codigo-postal" id="postal-code">
+            <input type="text" placeholder="Número" id="place-number">
+          </span>
+          <input type="date" id="date">
+          <input type="text" placeholder="Número de contato" id="contact-number">
+          <input type="textarea" placeholder="Requisitos" id="requirements">
+
+          <span id="file-input">
+            <input type="file" name="file-input" id="file-input" class="file-input__input" />
+            <label class="file-input__label" for="file-input">
+              <img src="../imgs/upload.svg" alt="">
+              <span>Subir a imagem</span></label>
+          </span>
+
+          <button id="create-event">Criar</button>
+        </span>
+
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

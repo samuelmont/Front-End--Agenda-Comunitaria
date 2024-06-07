@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atualizar conta</title>
+  <link rel="stylesheet" href="../css/update-account.css">
+</head>
+<body>
+  <header>
+    <span id="logo-span">
+      <img src="../imgs/logo.svg" alt="Simbolo de calendario">
+      <h1>AGENDA COMUNITÁRIA</h1>
+    </span>
+  </header>
+
+  <main>
+    <div id="main-container">
+
+      <div id="logo-container">
+        <img src="../imgs/logo.svg" alt="Simbolo de calendario">
+        <h1>AGENDA COMUNITÁRIA</h1>
+      </div>
+
+      <div id="update-container">
+        <h2>Atualizar conta</h2>
+
+        <form id="update-form">
+          <input type="text" placeholder="Nome" id="update-name">
+          <input type="password" placeholder="Senha" id="update-password">
+          <input type="password" placeholder="Confirme a senha" id="update-repassword">
+          <input type="text" placeholder="Email" id="update-email">
+          <input type="text" placeholder="Telefone" id="update-contact">
+
+          <span id="toggle-update">
+            <img src="../imgs/hidePass.svg" alt="Olho com uma risca no meio" id="show-update">
+            <p>Mostrar senha</p>
+          </span>
+
+          <button type="submit" id="update-button">
+            <img src="../imgs/arrow.svg" alt="Seta branca apontando para a direita">
+          </button>
+        </form>
+        <button type="submit" id="delete-button">
+          <h1>Excluir Conta</h1>
+        </button>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>

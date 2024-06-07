@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+--amarelo: #fbff00;
+--amarelo-50: #fbff0080;
+--branco: #FFFFFF;
+--branco-50: #FFFFFF80;
+--cinza: #302D2D;
+--cinza-50: #302D2D80;
+--svg-amarelo: invert(97%) sepia(100%) saturate(4466%) hue-rotate(359deg) brightness(104%) contrast(107%);
+--svg-branco: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  height: 10vh;
+  width: 100vw;
+  position: absolute;
+  background:  linear-gradient(var(--amarelo-50), var(--cinza-50));
+  display: flex;
+  align-items: center;
+}
+
+#logo-span {
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+#logo-span img {
+  width: 5rem;
+}
+
+#logo-span h1 {
+  margin-left: 2rem;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: var(--branco);
+}
+
+main {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--cinza);
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-container {
+  height: 70vh;
+  width: 80vw;
+  border: 0.5rem solid var(--amarelo);
+  display: flex;
+  flex-direction: row;
+}
+
+#main-container div {
+  flex: 1;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#logo-container img {
+  width: 20rem;
+}
+
+#logo-container h1 {
+  margin-left: 2rem;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 5rem;
+  color: var(--branco);
+  text-align: center;
+  margin-top: 5rem
+}
+
+#login-container, #signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#login-container h2, #signin-container h2 {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 5rem;
+  color: var(--branco);
+  margin-top: 5rem;
+}
+
+#login-form, #signin-form {
+  height: 70%;
+  width: 100%;
+  border-left: 0.1rem solid var(--branco);
+  border-right: 0.1rem solid var(--branco);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-form input, #signin-form input {
+  margin-top: 4rem;
+  width: 70%;
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid var(--branco);
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: var(--branco);
+  text-align: center;
+}
+
+#login-form input:focus, #signin-form input:focus {
+  border-bottom: 0.2rem solid var(--amarelo);
+  outline: none
+}
+
+#toggle-login, #toggle-signin {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#toggle-login:hover, #toggle-signin:hover {
+  cursor: pointer;
+}
+
+#toggle-login img, #toggle-signin img {
+  filter: var(--svg-branco);
+  width: 2rem;
+}
+
+#toggle-login:hover img, #toggle-signin:hover img {
+  filter: var(--svg-amarelo);
+}
+
+#toggle-login p, #toggle-signin p {
+  margin-left: 1rem;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--branco);
+}
+
+#login-form a {
+  margin-top: 3rem;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--branco);
+  text-decoration: none;
+}
+
+#login-form a:active {
+  color: var(--amarelo);
+}
+
+#login-button, #signin-button {
+  margin-top: 3rem;
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid var(--branco);
+  width: 30%;
+}
+
+#login-button:hover, #signin-button:hover {
+  cursor: pointer;
+  border-bottom: 0.2rem solid var(--amarelo);
+}
+
+#login-button img, #signin-button img {
+  width: 3rem;
+}
+
+#signin-form {
+  border: none;
+}
+
+#signin-form input {
+  margin-top: 2rem;
+}
