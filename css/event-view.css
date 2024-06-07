@@ -34,7 +34,7 @@ h1:hover {
   width: 20vw;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 10;
   flex-direction: column;
   display: none;
 }
@@ -173,6 +173,7 @@ main {
   display: flex;
   align-items: center;
   padding: 7rem 5rem;
+  z-index: 2;
 }
 
 #image-container {
@@ -221,7 +222,7 @@ main {
   font-size: 1.4rem;
 }
 
-#enter-event {
+.enter-event {
   margin-top: 4rem;
   background-color: #fbff00;
   border: none;
